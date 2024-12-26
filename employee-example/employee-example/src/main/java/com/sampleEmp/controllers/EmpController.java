@@ -23,9 +23,5 @@ public class EmpController {
         return empService.findAll();
     }
 
-    @GetMapping("/{id}")
-    public Employee getEmployeeById(@PathVariable int id){
-        Optional<Employee> employee = empService.findById(id);
-        return employee.orElse(null);
-    }
+
 }
